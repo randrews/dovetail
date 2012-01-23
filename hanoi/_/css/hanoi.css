@@ -1,0 +1,18 @@
+table { width: 500px; }
+
+td { width: 33%; }
+
+table ul { border: solid 1px gray; height: 66px; }
+
+table li { 
+  padding: 10px;
+  background-color: yellow;
+  border: solid 1px black;
+  margin: auto; 
+}
+
+[data-size="1"] { width: 75px }
+
+[data-size="2"] { width: 125px }
+
+[data-size="3"] { width: 150px }
