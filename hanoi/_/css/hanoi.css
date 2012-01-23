@@ -1,10 +1,12 @@
-table { width: 500px; }
+.wrapper { width: 960px; margin: 0 auto; overflow: hidden; }
+
+table { width: 100%; }
 
 td { width: 33%; }
 
-table ul { border: solid 1px gray; height: 66px; }
+ul { border: solid 1px gray; height: 66px; }
 
-table li { 
+li { 
   padding: 10px;
   background-color: yellow;
   border: solid 1px black;
