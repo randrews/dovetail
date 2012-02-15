@@ -1,0 +1,13 @@
+using StructureMap;
+
+namespace PizzaWeb.Bootstrap
+{
+    public class PizzaWebBootstrapper
+    {
+        public static IContainer BuildContainer()
+        {
+            ObjectFactory.Initialize(x => x.AddRegistry<WebRegistry>());
+            return ObjectFactory.Container;
+        }
+    }
+}
