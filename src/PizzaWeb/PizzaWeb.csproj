@@ -116,8 +116,10 @@
   <ItemGroup>
     <Content Include="Content\Images\glyphicons-halflings-white.png" />
     <Content Include="Content\Images\glyphicons-halflings.png" />
+    <Content Include="Content\Images\pp.jpg" />
     <Content Include="Content\Scripts\bootstrap.js" />
     <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Scripts\_jquery-1.7.1.min.js" />
     <Content Include="Content\Styles\bootstrap-responsive.css" />
     <Content Include="Content\Styles\bootstrap-responsive.min.css" />
     <Content Include="Content\Styles\bootstrap.css" />
