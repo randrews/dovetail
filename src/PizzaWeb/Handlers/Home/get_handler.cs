@@ -2,7 +2,7 @@
 
 namespace PizzaWeb.Handlers.Home
 {
-    public class HomeHandler
+    public class get_handler
     {
         public HomeViewModel Execute(HomeModel model)
         {
