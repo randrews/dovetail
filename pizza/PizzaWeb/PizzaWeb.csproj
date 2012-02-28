@@ -34,26 +34,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bottles">
-      <HintPath>..\packages\Bottles.0.9.1.191\lib\Bottles.dll</HintPath>
+    <Reference Include="Bottles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bottles.0.9.1.197\lib\Bottles.dll</HintPath>
     </Reference>
-    <Reference Include="FubuCore">
-      <HintPath>..\packages\FubuCore.0.9.4.112\lib\FubuCore.dll</HintPath>
+    <Reference Include="FubuCore, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuCore.0.9.4.114\lib\FubuCore.dll</HintPath>
     </Reference>
-    <Reference Include="FubuLocalization">
-      <HintPath>..\packages\FubuLocalization.0.9.4.112\lib\FubuLocalization.dll</HintPath>
+    <Reference Include="FubuLocalization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuLocalization.0.9.4.114\lib\FubuLocalization.dll</HintPath>
     </Reference>
-    <Reference Include="FubuMVC.Core">
-      <HintPath>..\packages\FubuMVC.References.0.9.3.730\lib\net40\FubuMVC.Core.dll</HintPath>
+    <Reference Include="FubuMVC.Core, Version=0.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuMVC.References.0.9.3.740\lib\net40\FubuMVC.Core.dll</HintPath>
     </Reference>
-    <Reference Include="FubuMVC.StructureMap">
-      <HintPath>..\packages\FubuMVC.References.0.9.3.730\lib\net40\FubuMVC.StructureMap.dll</HintPath>
+    <Reference Include="FubuMVC.StructureMap, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuMVC.References.0.9.3.740\lib\net40\FubuMVC.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.Validation">
+      <HintPath>..\packages\FubuMVC.Validation.0.4.0.216\lib\FubuMVC.Validation.dll</HintPath>
     </Reference>
     <Reference Include="FubuMVC.WebForms">
       <HintPath>..\packages\FubuMVC.WebForms.0.9.3.730\lib\net40\FubuMVC.WebForms.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlTags">
-      <HintPath>..\packages\HtmlTags.1.0.0.54\lib\4.0\HtmlTags.dll</HintPath>
+    <Reference Include="FubuValidation">
+      <HintPath>..\packages\FubuValidation.0.4.0.216\lib\FubuValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuValidation.StructureMap">
+      <HintPath>..\packages\FubuValidation.0.4.0.216\lib\FubuValidation.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlTags, Version=1.0.0.55, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HtmlTags.1.0.0.55\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.ServiceLocation">
@@ -77,27 +87,38 @@
     <Compile Include="Bootstrap\PizzaWebApplication.cs" />
     <Compile Include="Bootstrap\PizzaWebBootstrapper.cs" />
     <Compile Include="Bootstrap\PizzaWebFubuRegistry.cs" />
-    <Compile Include="Bootstrap\WebRegistry.cs" />
+    <Compile Include="Bootstrap\StructureMapRegistry.cs" />
+    <Compile Include="Conventions\EntityListBuilder.cs" />
+    <Compile Include="Conventions\EntityPropertyConverter.cs" />
+    <Compile Include="Conventions\PizzaWebHtmlConventions.cs" />
+    <Compile Include="Conventions\PizzaWebStringifierConventions.cs" />
+    <Compile Include="Conventions\PlaceOrderValidationFailurePolicy.cs" />
+    <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Data\Entity.cs" />
+    <Compile Include="Data\PickupOrder.cs" />
+    <Compile Include="Data\PizzaType.cs" />
+    <Compile Include="Data\Store.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\Flashes\get_handler.cs" />
     <Compile Include="Handlers\HandlerToken.cs" />
     <Compile Include="Handlers\Home\HomeHandler.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Handlers\PlaceOrder\get_handler.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\PlaceOrder\post_handler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Handlers\Home\HomeView.aspx" />
+    <Content Include="Handlers\PlaceOrder\PlaceOrderView.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\CSS\" />
-    <Folder Include="Content\Scripts\" />
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

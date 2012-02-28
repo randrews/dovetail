@@ -1,5 +1,7 @@
 using FubuMVC.Core;
+using FubuMVC.Validation;
 using FubuMVC.WebForms;
+using PizzaWeb.Conventions;
 using PizzaWeb.Handlers;
 using PizzaWeb.Handlers.Home;
 
@@ -17,11 +19,19 @@ namespace PizzaWeb.Bootstrap
             ApplyHandlerConventions<HandlerToken>();
 
             Routes
-                .HomeIs<HomeHandler>(h => h.Execute())
+                .HomeIs<HomeModel>()
                 .IgnoreControllerNamesEntirely();
             
             Views
                 .TryToAttachWithDefaultConventions();
+
+            this.Validation(x => x.Failures.ApplyPolicy<PlaceOrderValidationFailurePolicy>());
+
+            StringConversions<PizzaWebStringifierConventions>();
+            
+            HtmlConvention<PizzaWebHtmlConventions>();
+            
+            Models.ConvertUsing<EntityPropertyConverter>();
 
             Import<WebFormsEngine>();
         }

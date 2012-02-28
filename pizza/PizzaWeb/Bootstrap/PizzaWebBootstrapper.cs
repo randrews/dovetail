@@ -6,7 +6,7 @@ namespace PizzaWeb.Bootstrap
     {
         public static IContainer BuildContainer()
         {
-            ObjectFactory.Initialize(x => x.AddRegistry<WebRegistry>());
+            ObjectFactory.Initialize(x => x.AddRegistry<StructureMapRegistry>());
             return ObjectFactory.Container;
         }
     }
