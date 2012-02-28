@@ -72,6 +72,8 @@
     <Compile Include="Conventions\EntityPropertyConverterTester.cs" />
     <Compile Include="Conventions\PlaceOrderValidationFailurePolicyTester.cs" />
     <Compile Include="Conventions\StringifierConventionsTester.cs" />
+    <Compile Include="Handlers\FlashHandlerTester.cs" />
+    <Compile Include="Handlers\PlaceOrderPostHandlerTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
