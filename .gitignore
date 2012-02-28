@@ -4,4 +4,5 @@ bin
 _ReSharper*
 *.suo
 *.cache
-pizza/packages/*/src
+src/packages
+results
