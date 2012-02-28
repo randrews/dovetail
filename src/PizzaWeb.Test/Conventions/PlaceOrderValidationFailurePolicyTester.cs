@@ -2,7 +2,6 @@
 using FubuMVC.Core.Runtime;
 using FubuMVC.Core.SessionState;
 using FubuMVC.Validation;
-using FubuTestingSupport;
 using FubuValidation;
 using NUnit.Framework;
 using PizzaWeb.Conventions;

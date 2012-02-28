@@ -16,7 +16,7 @@ task :ci => [:update_all_dependencies, :default]
 
 desc "Compiles the app"
 task :compile => [:restore_if_missing] do
-  MSBuildRunner.compile :compilemode => COMPILE_TARGET, :solutionfile => 'pizza/Pizza.sln', :clrversion => CLR_TOOLS_VERSION
+  MSBuildRunner.compile :compilemode => COMPILE_TARGET, :solutionfile => 'Pizza.sln', :clrversion => CLR_TOOLS_VERSION
 end
 
 desc "Runs unit tests"
@@ -24,6 +24,6 @@ task :test => [:unit_test]
 
 desc "Runs unit tests"
 task :unit_test => :compile do
-  runner = NUnitRunner.new :compilemode => COMPILE_TARGET, :source => 'pizza', :platform => 'x86'
+  runner = NUnitRunner.new :compilemode => COMPILE_TARGET, :source => 'src', :platform => 'x86'
   runner.executeTests ['PizzaWeb.Test']
 end
