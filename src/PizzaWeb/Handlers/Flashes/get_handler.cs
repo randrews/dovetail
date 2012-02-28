@@ -17,15 +17,26 @@ namespace PizzaWeb.Handlers.Flashes
         [FubuPartial]
         public string Execute(GetFlashes input)
         {
-            var ul = new HtmlTag("ul");
+            /*
+                <div class="alert">
+                  <a class="close" data-dismiss="alert">×</a>
+                  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                </div>
+             */
 
             var array = _flash.Retrieve<string[]>();
-
             if (array == null) return new NoTag().ToHtmlString();
+
+            var div = new HtmlTag("div").AddClass("alert");
+            var closeLink = new HtmlTag("a").AddClass("close").Data("dismiss", "alert");
+            div.Append(closeLink);
+            
+            var ul = new HtmlTag("ul");
 
             array.Each(i => ul.Append("li", l => l.Text(i)));
 
-            return ul.ToHtmlString();
+            div.Append(ul);
+            return div.ToHtmlString();
         }
     }
 

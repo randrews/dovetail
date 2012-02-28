@@ -1,27 +1,28 @@
-﻿<%@ Page Language="C#" Inherits="PizzaWeb.Handlers.PlaceOrder.PlaceOrderView" %>
+﻿<%@ Page Language="C#" MasterPageFile="../../Content/Main.master" Inherits="PizzaWeb.Handlers.PlaceOrder.PlaceOrderView" Title="Hipster Pi: Place an order" %>
+<%@ Import Namespace="PizzaWeb.Handlers.Home" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Hipster Pi : Place an Order</title>
-    </head>
-    <body>
-        <div><%= this.Partial<GetFlashes>() %></div>
-        <h1>Place an Order for Pickup</h1>
-        <%= this.FormFor<PickupOrder>() %>
-            
-            <p>
-                <label><span>Name on order:</span> <%= this.InputFor(new PickupOrder(), m => m.Name) %></label>
-            </p>
-            
-            <p>
-                <label><span>Location for pickup: </span> <%= this.InputFor(new PickupOrder(), m => m.Store)%></label>
-            </p>
-            <p>
-                <label><span>Pizza: </span> <%= this.InputFor(new PickupOrder(), m => m.PizzaType)%></label>
-            </p>
-            <p><input type="submit" value="Submit your order"/></p>
-        <%= this.EndForm() %>
-    </body>
-</html>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+        <div class="page-header">
+          <h1>Place an Order for Pickup</h1>
+        </div>
+        <div class="row">
+          <div class="span3">
+              <p><%= this.LinkTo<HomeModel>().Text("Back home") %></p>
+              Just give us your name and zip code, select the store, and the type of pizza you want and we'll have it done and ready for you before it was cool!
+              <ul class="thumbnails">
+                  <li class="span3"><img runat="server" src="~/Content/Images/pp.jpg" alt="Pizza pi"/></li>
+              </ul>
+          </div>
+          <div class="span9">
+              <%= this.FormFor<PickupOrder>() %>
+                    <%= this.Edit(m => m.Name) %>
+                    <%= this.Edit(m => m.Store)%>
+                    <%= this.Edit(m => m.PizzaType)%>
+                    <div class="form-actions">
+                        <input type="submit" class="btn btn-primary" value="Submit your order"/>
+                    </div>
+                <%= this.EndForm() %>
+          </div>
+        </div>
+        
+</asp:Content>

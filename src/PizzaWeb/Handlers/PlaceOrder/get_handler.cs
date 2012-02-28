@@ -1,16 +1,17 @@
 ﻿using FubuMVC.WebForms;
+using PizzaWeb.Data;
 
 namespace PizzaWeb.Handlers.PlaceOrder
 {
     public class get_handler
     {
-        public PlaceOrderStart Execute(PlaceOrderStart input)
+        public PickupOrder Execute(PlaceOrderStart input)
         {
-            return new PlaceOrderStart();
+            return new PickupOrder();
         }
     }
 
     public class PlaceOrderStart{}
 
-    public class PlaceOrderView : FubuPage<PlaceOrderStart> { }
+    public class PlaceOrderView : FubuPage<PickupOrder> { }
 }

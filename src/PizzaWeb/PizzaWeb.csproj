@@ -92,6 +92,7 @@
     <Compile Include="Conventions\EntityPropertyConverter.cs" />
     <Compile Include="Conventions\PizzaWebHtmlConventions.cs" />
     <Compile Include="Conventions\PizzaWebStringifierConventions.cs" />
+    <Compile Include="Conventions\FieldLayoutConvention.cs" />
     <Compile Include="Conventions\PlaceOrderValidationFailurePolicy.cs" />
     <Compile Include="Data\DataRepository.cs" />
     <Compile Include="Data\Entity.cs" />
@@ -103,7 +104,7 @@
     </Compile>
     <Compile Include="Handlers\Flashes\get_handler.cs" />
     <Compile Include="Handlers\HandlerToken.cs" />
-    <Compile Include="Handlers\Home\HomeHandler.cs">
+    <Compile Include="Handlers\Home\get_handler.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Handlers\PlaceOrder\get_handler.cs">
@@ -113,12 +114,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\glyphicons-halflings-white.png" />
+    <Content Include="Content\Images\glyphicons-halflings.png" />
+    <Content Include="Content\Scripts\bootstrap.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Styles\bootstrap-responsive.css" />
+    <Content Include="Content\Styles\bootstrap-responsive.min.css" />
+    <Content Include="Content\Styles\bootstrap.css" />
+    <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Handlers\Home\HomeView.aspx" />
     <Content Include="Handlers\PlaceOrder\PlaceOrderView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\Main.master" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
