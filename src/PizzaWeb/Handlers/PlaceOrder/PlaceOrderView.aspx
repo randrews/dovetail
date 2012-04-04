@@ -8,7 +8,7 @@
         <div class="row">
           <div class="span3">
               <p><%= this.LinkTo<HomeModel>().Text("Back home") %></p>
-              Just give us your name and zip code, select the store, and the type of pizza you want and we'll have it done and ready for you before it was cool!
+              Just give us your name, select the store, and the type of pizza you want and we'll have it done and ready for you before it was cool!
               <ul class="thumbnails">
                   <li class="span3"><img runat="server" src="~/Content/Images/pp.jpg" alt="Pizza pi"/></li>
               </ul>
