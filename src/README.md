@@ -26,8 +26,8 @@ Excercise your overall coding skills by extending this application. This applica
 #Notes
 
 - Do NOT fork this repo unless you don't mind it being public. This is to protect your privacy.
-- Clone this repo.
-- once you have cloned locally, run 'git submodule update --init'
+- Clone this repo or clone your fork if you made a fork.
+- Once you have cloned locally, run 'git submodule update --init'
 - then run 'rake' -- from here on out it should build in visual studio
 - You may use whatever tools you like to develop and test -- but we will run 'rake' to compile and test your code
 - Commit your work to your local repository in a branch (you pick the name, just let us know)
