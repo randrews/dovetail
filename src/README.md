@@ -13,6 +13,8 @@ Excercise your overall coding skills by extending this application. This applica
 - Capture an additional required field 'Phone Number' from the user.
   - Phone number should be implemented as a micro type
   - using a Html Convention present the phone number as a series of three boxes
+- Add a route to display a list of current orders in the system
+- Do something to impress us (code related please -- no videos of you juggling chainsaws or anything like that)
 - You MUST support: IE8 and later, FireFox (latest), and Chrome (latest)
 - When you send us your code:
   - We will run this command: `rake`
