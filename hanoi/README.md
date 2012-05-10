@@ -12,6 +12,7 @@ Implement the "Towers of Hanoi" game using the provided table/ui/li structure in
 - Implement drag-n-drop to let the user play the game
 - Prevent the user from dragging a larger disk onto a smaller disk
 - Indicate to the user when they have won the game
+- Do something (code related) to impress us
 
 # Requirements:
 
