@@ -1,14 +1,21 @@
 # Goal
 
-Implement the "Towers of Hanoi" game using the provided table/ui/li structure in the HTML. Allowing the user to drag and drop the disks to the other "poles" and win the game by ending with the disks stacked correctly on another pole besides the starting pole.
+Implement the "Towers of Hanoi" game using the provided table/ui/li structure in the HTML. 
 
+## Rules of the Game
+- The game starts with a series of disks -- with increasing size -- stacked on a "pole". There are three poles.
+- The objective is to end with the disks stacked on one of the other poles
+- The player moves disks one at a time by dragging and dropping them to the other "poles".
+- A larger disk cannot be placed on top of a smaller disk.
+
+## Tasks
 - Implement drag-n-drop to let the user play the game
 - Prevent the user from dragging a larger disk onto a smaller disk
 - Indicate to the user when they have won the game
 
 # Requirements:
 
-- Solution MUST be completely implemented in the browser using HTML, CSS, and JavaScript - no server side code, flash, applets, or other plugins.
+- Solution MUST be completely implemented in the browser using HTML, CSS, and JavaScript - no server side code, flash, applets, or other browser plugins.
 - You MUST use jQuery in your solution
 - You MUST support: IE8 and later, FireFox (latest), and Chrome (latest)
 
