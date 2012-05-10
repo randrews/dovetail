@@ -1,5 +1,16 @@
 Welcome to the Dovetail Coder Test
 
+# Getting Started
+
+- Do NOT fork this repo unless you don't mind it being public. This is to protect your privacy.
+- Clone this repo or clone your fork if you made a fork.
+- Once you have cloned locally, run 'git submodule update --init'
+- Work on the two tests (see below)
+- Commit your work to your local repository in a branch (you pick the name, just let us know)
+- You can send your work back to us in a ZIP file via email, as a git patch via email, a dropbox shared folder, or whatever else you think is appropriate.
+  - More info on [using Dropbox as a Git repository](http://rogerstringer.com/2012/04/16/using-dropbox-as-a-git-repository)
+
+
 There are two test projects located in this repository.
 
 ## 1.) Towers of Hanoi Test
