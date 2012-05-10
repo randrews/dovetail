@@ -16,10 +16,10 @@ namespace PizzaWeb.Test.Handlers
         }
 
         [Test]
-        public void should_render_a_ul_tag()
+        public void should_render_a_div_tag_with_class_alert()
         {
             Services.Get<IFlash>().Stub(f => f.Retrieve<string[]>()).Return(new[] {"foo"});
-            ClassUnderTest.Execute(null).ShouldStartWith("<ul>");
+            ClassUnderTest.Execute(null).ShouldStartWith("<div class=\"alert\">");
         }
 
         [Test]
