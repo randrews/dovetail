@@ -2,6 +2,10 @@
 
 Excercise your overall coding skills by extending this application. This application represents in a large part a simplified version of our application stack. Proving that you can find your way around this code base, while navigating the amount of OSS code involved will help demonstrate your capabilties to our team.
 
+# Getting Started
+
+- run 'rake' -- from here on out it should build in visual studio
+
 # Requirements:
 
 - Extend the 'Name' field to 'First Name' and 'Last Name'
@@ -25,11 +29,4 @@ Excercise your overall coding skills by extending this application. This applica
 
 #Notes
 
-- Do NOT fork this repo unless you don't mind it being public. This is to protect your privacy.
-- Clone this repo or clone your fork if you made a fork.
-- Once you have cloned locally, run 'git submodule update --init'
-- then run 'rake' -- from here on out it should build in visual studio
 - You may use whatever tools you like to develop and test -- but we will run 'rake' to compile and test your code
-- Commit your work to your local repository in a branch (you pick the name, just let us know)
-- You can send your work back to us in a ZIP file via email, as a git patch via email, a dropbox shared folder, or whatever else you think is appropriate.
-   - More info on [using Dropbox as a Git repository](http://rogerstringer.com/2012/04/16/using-dropbox-as-a-git-repository)
