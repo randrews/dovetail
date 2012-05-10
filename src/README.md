@@ -10,7 +10,14 @@ Excercise your overall coding skills by extending this application. This applica
   - Phone number should be implemented as a micro type
   - using a Html Convention present the phone number as a series of three boxes
 - You MUST support: IE8 and later, FireFox (latest), and Chrome (latest)
-- When you tell us you're finished, we pull your fork. We will run rake. Your code should successfully compile and all tests should pass.
+- When you send us your code:
+  - We will run this command: `rake`
+  - We expect the last few lines of the output to look something like this:
+    
+    ```
+    Tests run: XX, Errors: 0, Failures: 0, Inconclusive: 0, Time: 0.6510372 seconds
+      Not run: 0, Invalid: 0, Ignored: 0, Skipped: 0
+    ```
 
 # Optionals:
 
@@ -24,5 +31,5 @@ Excercise your overall coding skills by extending this application. This applica
 - then run 'rake' -- from here on out it should build in visual studio
 - You may use whatever tools you like to develop and test -- but we will run 'rake' to compile and test your code
 - Commit your work to your local repository in a branch (you pick the name, just let us know)
-- You can send your work back to us in a ZIP file in an email, as a git patch via email, a dropbox shared folder, or whatever else you think is appropriate.
+- You can send your work back to us in a ZIP file via email, as a git patch via email, a dropbox shared folder, or whatever else you think is appropriate.
    - More info on [using Dropbox as a Git repository](http://rogerstringer.com/2012/04/16/using-dropbox-as-a-git-repository)
