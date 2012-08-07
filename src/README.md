@@ -8,7 +8,7 @@ Excercise your overall coding skills by extending this application. This applica
 
 # Requirements:
 
-- Extend the 'Name' field to 'First Name' and 'Last Name'
+- Extend the 'PickupOrder' to have 'First Name' and 'Last Name' properties inplace of one 'Name' property.
 - Present the 'Pizza Type' in another fashion than a dropdown
 - Capture an additional required field 'Phone Number' from the user.
   - Phone number should be implemented as a micro type
