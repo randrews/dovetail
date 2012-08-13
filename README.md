@@ -8,6 +8,7 @@ Welcome to the Dovetail Coder Test
 - Work on the two tests (see below)
 - We value your time, so please do not feel that you need to spend more than 4 hours on this. If you can't get everything done in time, that's OK.
 - Commit your work to your local repository in a branch (you pick the name, just let us know)
+    - Ideally you would have a commit for each feature
 - You can send your work back to us in a ZIP file via email, as a git patch via email, a dropbox shared folder, or whatever else you think is appropriate.
   - More info on [using Dropbox as a Git repository](http://rogerstringer.com/2012/04/16/using-dropbox-as-a-git-repository)
 
