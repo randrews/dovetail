@@ -4,5 +4,4 @@ bin
 _ReSharper*
 *.suo
 *.cache
-src/packages
 results

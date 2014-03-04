@@ -8,6 +8,10 @@ buildsupportfiles.each { |ext| load ext }
 include FileTest
 require 'albacore'
 
+def sh command
+ system command
+end
+
 desc "**Default**, compiles and runs tests"
 task :default => [:compile, :unit_test]
 
