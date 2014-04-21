@@ -32,5 +32,5 @@ implement a Towers of Hanoi module.
 (details inside)
 
 This test contains a functional FubuMVC application and we will
-ask you to extend the application using C#, JavaScript, CSS and HTML
+ask you to extend the application using C#, JavaScript, CSS and HTML.  Currently, it is not compatible with VS2013.  Please use VS2012 if possible.
 
