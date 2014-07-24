@@ -12,5 +12,9 @@ namespace PizzaWeb.Data
         public Store Store { get; set; }
         [Required]
         public PizzaType PizzaType { get; set; }
+
+        [Required]
+        public PhoneNumber PhoneNumber { get; set; }
+
     }
 }

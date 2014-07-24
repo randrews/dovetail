@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,6 +106,7 @@
     <Compile Include="Conventions\PlaceOrderValidationFailurePolicy.cs" />
     <Compile Include="Data\DataRepository.cs" />
     <Compile Include="Data\Entity.cs" />
+    <Compile Include="Data\PhoneNumber.cs" />
     <Compile Include="Data\PickupOrder.cs" />
     <Compile Include="Data\PizzaType.cs" />
     <Compile Include="Data\Store.cs" />
