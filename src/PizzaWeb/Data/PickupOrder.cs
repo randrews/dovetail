@@ -5,7 +5,9 @@ namespace PizzaWeb.Data
     public class PickupOrder : Entity
     {
         [Required]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
         [Required]
         public Store Store { get; set; }
         [Required]

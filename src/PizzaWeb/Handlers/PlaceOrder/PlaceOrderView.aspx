@@ -15,7 +15,8 @@
           </div>
           <div class="span9">
               <%= this.FormFor<PickupOrder>() %>
-                    <%= this.Edit(m => m.Name) %>
+                    <%= this.Edit(m => m.FirstName) %>
+                    <%= this.Edit(m => m.LastName) %>
                     <%= this.Edit(m => m.Store)%>
                     <%= this.Edit(m => m.PizzaType)%>
                     <div class="form-actions">
