@@ -20,6 +20,7 @@ namespace PizzaWeb.Test.Conventions
         private PizzaTypeEditorConvention builder;
         private IServiceLocator services;
         private IRepository repository;
+        private Stringifier stringifier;
         private PizzaType pizzaType;
         private PickupOrder order;
 
@@ -31,8 +32,10 @@ namespace PizzaWeb.Test.Conventions
             order = new PickupOrder { Id = new Guid(), PizzaType = pizzaType };
             services = MockRepository.GenerateStub<IServiceLocator>();
             repository = MockRepository.GenerateStub<IRepository>();
+            stringifier = new Stringifier();
             repository.Stub(r => r.GetAll<PizzaType>()).Return(new List<PizzaType> { pizzaType });
             services.Stub(l => l.GetInstance<IRepository>()).Return(repository);
+            services.Stub(l => l.GetInstance<Stringifier>()).Return(stringifier);
         }
 
         [Test]

@@ -20,7 +20,8 @@ namespace PizzaWeb.Conventions
         {
             HtmlTag el = new HtmlTag("ul").AddClass("pizza-type");
 
-            IEnumerable<PizzaType> pizzaTypes = request.Get<IRepository>().GetAll(typeof(PizzaType)).Cast<PizzaType>();
+            IRepository repository = request.Get<IRepository>();
+            IEnumerable<PizzaType> pizzaTypes = repository.GetAll<PizzaType>().Cast<PizzaType>();
             var stringifier = request.Get<Stringifier>();
 
             foreach (PizzaType pt in pizzaTypes)
