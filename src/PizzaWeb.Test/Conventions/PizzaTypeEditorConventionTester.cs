@@ -18,11 +18,21 @@ namespace PizzaWeb.Test.Conventions
     public class PizzaTypeEditorConvention_matches_Tester
     {
         private PizzaTypeEditorConvention builder;
+        private IServiceLocator services;
+        private IRepository repository;
+        private PizzaType pizzaType;
+        private PickupOrder order;
 
         [SetUp]
         public void SetUp()
         {
             builder = new PizzaTypeEditorConvention();
+            pizzaType = new PizzaType { Id = new Guid(), Name = "Test", Description = "Test description" };
+            order = new PickupOrder { Id = new Guid(), PizzaType = pizzaType };
+            services = MockRepository.GenerateStub<IServiceLocator>();
+            repository = MockRepository.GenerateStub<IRepository>();
+            repository.Stub(r => r.GetAll<PizzaType>()).Return(new List<PizzaType> { pizzaType });
+            services.Stub(l => l.GetInstance<IRepository>()).Return(repository);
         }
 
         [Test]
@@ -42,9 +52,6 @@ namespace PizzaWeb.Test.Conventions
         [Test]
         public void should_Build_properly()
         {
-            var def = AccessorDef.For<PickupOrder>(x => x.PizzaType);
-            var services = MockRepository.GenerateStub<IServiceLocator>();
-            
             ElementRequest request = new ElementRequest(new PickupOrder(), ReflectionHelper.GetAccessor<PickupOrder>(m => m.PizzaType), services);
             builder.Build(request).ShouldNotBeNull();
         }
