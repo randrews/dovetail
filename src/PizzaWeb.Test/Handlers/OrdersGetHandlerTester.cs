@@ -28,11 +28,5 @@ namespace PizzaWeb.Test.Handlers
         {
             Services.Get<IRepository>().AssertWasCalled(r => r.GetAll<PickupOrder>());
         }
-
-        [Test]
-        public void should_return_orders()
-        {
-            result.ShouldNotBeNull();
-        }
     }
 }
