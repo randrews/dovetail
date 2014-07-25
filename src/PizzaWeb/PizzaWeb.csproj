@@ -98,6 +98,7 @@
     <Compile Include="Bootstrap\PizzaWebBootstrapper.cs" />
     <Compile Include="Bootstrap\PizzaWebFubuRegistry.cs" />
     <Compile Include="Bootstrap\StructureMapRegistry.cs" />
+    <Compile Include="Conventions\PhoneNumberDisplayConvention.cs" />
     <Compile Include="Conventions\EntityListBuilder.cs" />
     <Compile Include="Conventions\EntityPropertyConverter.cs" />
     <Compile Include="Conventions\PhoneNumberConvention.cs" />

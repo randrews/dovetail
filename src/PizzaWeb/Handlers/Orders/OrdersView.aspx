@@ -25,9 +25,9 @@
                         <tr>
                             <td><%= p.FirstName %></td>
                             <td><%= p.LastName %></td>
-                            <td><%= p.PhoneNumber %></td>
-                            <td><%= p.Store %></td>
-                            <td><%= p.PizzaType %></td>
+                            <td><%= this.DisplayFor(p, m => m.PhoneNumber) %></td>
+                            <td><%= this.DisplayFor(p, m => m.Store) %></td>
+                            <td><%= this.DisplayFor(p, m => m.PizzaType) %></td>
                         </tr>
                       <% } %>
                   </tbody>
