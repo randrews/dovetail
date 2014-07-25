@@ -9,7 +9,7 @@ using System.Text;
 
 namespace PizzaWeb.Conventions
 {
-    class PizzaTypeEditorConvention : ElementBuilder
+    public class PizzaTypeEditorConvention : ElementBuilder
     {
         protected override bool matches(AccessorDef def)
         {

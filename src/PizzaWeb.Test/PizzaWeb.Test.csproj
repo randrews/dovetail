@@ -71,6 +71,9 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conventions\PizzaTypeEditorConventionTester.cs" />
+    <Compile Include="Conventions\PhoneNumberDisplayConventionTester.cs" />
+    <Compile Include="Conventions\PhoneNumberConventionTester.cs" />
     <Compile Include="Conventions\EntityListBuilderTester.cs" />
     <Compile Include="Conventions\EntityPropertyConverterTester.cs" />
     <Compile Include="Conventions\PlaceOrderValidationFailurePolicyTester.cs" />
