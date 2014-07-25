@@ -1,7 +1,7 @@
-﻿.phone-number input[name=AreaCode], .phone-number input[name=Prefix] {
+﻿.phone-number input[name=PhoneNumber\[AreaCode\]], .phone-number input[name=PhoneNumber\[Prefix\]] {
     width: 40px;
 }
 
-.phone-number input[name=Suffix] {
+.phone-number input[name=PhoneNumber\[Suffix\]] {
     width: 80px;
 }
