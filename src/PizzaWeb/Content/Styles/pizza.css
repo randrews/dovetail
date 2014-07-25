@@ -1,0 +1,7 @@
+﻿.phone-number input[name=AreaCode], .phone-number input[name=Prefix] {
+    width: 40px;
+}
+
+.phone-number input[name=Suffix] {
+    width: 80px;
+}

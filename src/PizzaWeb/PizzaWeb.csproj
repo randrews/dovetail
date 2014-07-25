@@ -100,6 +100,8 @@
     <Compile Include="Bootstrap\StructureMapRegistry.cs" />
     <Compile Include="Conventions\EntityListBuilder.cs" />
     <Compile Include="Conventions\EntityPropertyConverter.cs" />
+    <Compile Include="Conventions\PhoneNumberConvention.cs" />
+    <Compile Include="Conventions\PhoneNumberConverter.cs" />
     <Compile Include="Conventions\PizzaWebHtmlConventions.cs" />
     <Compile Include="Conventions\PizzaWebStringifierConventions.cs" />
     <Compile Include="Conventions\FieldLayoutConvention.cs" />
@@ -135,6 +137,7 @@
     <Content Include="Content\Styles\bootstrap-responsive.min.css" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
+    <Content Include="Content\Styles\pizza.css" />
     <Content Include="Global.asax" />
     <Content Include="Handlers\Home\HomeView.aspx" />
     <Content Include="Handlers\PlaceOrder\PlaceOrderView.aspx" />

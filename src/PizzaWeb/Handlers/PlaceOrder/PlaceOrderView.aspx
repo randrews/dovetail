@@ -17,7 +17,7 @@
               <%= this.FormFor<PickupOrder>() %>
                     <%= this.Edit(m => m.FirstName) %>
                     <%= this.Edit(m => m.LastName) %>
-                    <%= this.Edit(m => m.PhoneNumber) %>
+                    <%= this.InputFor(m => m.PhoneNumber) %>
                     <%= this.Edit(m => m.Store)%>
                     <%= this.Edit(m => m.PizzaType)%>
                     <div class="form-actions">

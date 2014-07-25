@@ -7,6 +7,7 @@ namespace PizzaWeb.Conventions
     {
         public PizzaWebHtmlConventions()
         {
+            Editors.Builder<PhoneNumberConvention>();
             Editors.Builder<EntityListBuilder>();
 
             Profile(TagProfile.DEFAULT, x => x.UseLabelAndFieldLayout<FieldLayoutConvention>());

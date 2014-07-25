@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
         <title>Hipster Pi</title>
-        <% this.Asset("bootstrap.min.css", "bootstrap-responsive.min.css", "_jquery-1.7.1.min.js", "bootstrap.js"); %>
+        <% this.Asset("bootstrap.min.css", "bootstrap-responsive.min.css", "_jquery-1.7.1.min.js", "bootstrap.js", "pizza.css"); %>
         <%= this.WriteAssetTags() %>
     </head>
     <body>
