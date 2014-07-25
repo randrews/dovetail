@@ -102,6 +102,7 @@
     <Compile Include="Conventions\EntityListBuilder.cs" />
     <Compile Include="Conventions\EntityPropertyConverter.cs" />
     <Compile Include="Conventions\PhoneNumberConvention.cs" />
+    <Compile Include="Conventions\PizzaTypeEditorConvention.cs" />
     <Compile Include="Conventions\PizzaWebHtmlConventions.cs" />
     <Compile Include="Conventions\PizzaWebStringifierConventions.cs" />
     <Compile Include="Conventions\FieldLayoutConvention.cs" />

@@ -8,6 +8,7 @@ namespace PizzaWeb.Conventions
         public PizzaWebHtmlConventions()
         {
             Editors.Builder<PhoneNumberConvention>();
+            Editors.Builder<PizzaTypeEditorConvention>();
             Editors.Builder<EntityListBuilder>();
             
             Displays.Builder<PhoneNumberDisplayConvention>();
