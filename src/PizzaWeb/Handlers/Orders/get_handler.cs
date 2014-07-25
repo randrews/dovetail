@@ -17,11 +17,12 @@ namespace PizzaWeb.Handlers.Orders
             _repository = repository;
         }
 
-        public IEnumerable<PickupOrder> Execute()
+        public IEnumerable<PickupOrder> Execute(OrdersListStart start)
         {
             return _repository.GetAll<PickupOrder>();
         }
     }
 
+    public class OrdersListStart { }
     public class OrdersView : FubuPage<IEnumerable<PickupOrder>> { }
 }

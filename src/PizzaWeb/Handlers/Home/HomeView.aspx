@@ -6,6 +6,7 @@
         <p>Pies so hip, we had to drop the 'e'</p>
         <p>
             <%= this.LinkTo<PlaceOrderStart>().Text("Place an order!").AddClasses("btn", "btn-primary", "btn-large") %>
+            <%= this.LinkTo<OrdersListStart>().Text("List orders").AddClasses("btn", "btn-large") %>
         </p>
     </div>
     
