@@ -17,11 +17,11 @@ namespace PizzaWeb.Conventions
             HtmlTag control = new HtmlTag("p").AddClass("phone-number");
             control.Append(new HtmlTag("label").Append("span").Text("Phone number"));
             control.Append(new HtmlTag("span").Text(" ( "));
-            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "3").Attr("name", "AreaCode"));
+            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "3").Attr("name", "PhoneNumber[AreaCode]"));
             control.Append(new HtmlTag("span").Text(" ) "));
-            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "3").Attr("name", "Prefix"));
+            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "3").Attr("name", "PhoneNumber[Prefix]"));
             control.Append(new HtmlTag("span").Text(" - "));
-            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "4").Attr("name", "Suffix"));
+            control.Append(new HtmlTag("input").Attr("type", "text").Attr("maxlength", "4").Attr("name", "PhoneNumber[Suffix]"));
             return control;
         }
     }
