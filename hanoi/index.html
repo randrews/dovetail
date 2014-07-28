@@ -11,54 +11,51 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<title>Dovetail | Towers of Hanoi Test</title>
-	
+
 	<meta name="title" content="Dovetail Towers of Hanoi Test">
 	<meta name="description" content="An HTML/CSS/JavaScript test by Dovetail for coder candidates">
 	<link rel="shortcut icon" href="_/img/favicon.ico">
 	<link rel="stylesheet" href="_/css/reset.css">
 	<link rel="stylesheet" href="_/css/hanoi.css">
-	
+
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="_/js/modernizr-1.7.min.js"></script>
-	
+
 </head>
 
 <body>
 
 <div class="wrapper">
 
-	<header>		
-		<h1>Dovetail | Towers of Hanoi Coder Test</h1>	
+	<header>
+		<h1>Dovetail | Towers of Hanoi Coder Test</h1>
 	</header>
-	
+
 	<article>
 		<h1>Towers of Hanoi</h1>
 
 		<table border="0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
-					<ul>
-						<li data-size="1"></li>
-						<li data-size="2"></li>
-						<li data-size="3"></li>
-					</ul>
+					<ul data-peg="0"></ul>
 				</td>
 				<td>
-					<ul></ul>
+					<ul data-peg="1"></ul>
 				</td>
 				<td>
-					<ul></ul>
+					<ul data-peg="2"></ul>
 				</td>
 			</tr>
 		</table>
 	</article>
-	
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="_/js/hanoi.js"></script>
 
 </body>
 </html>

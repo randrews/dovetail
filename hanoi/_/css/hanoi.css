@@ -19,9 +19,3 @@ li {
   border: solid 1px black;
   margin: auto; 
 }
-
-[data-size="1"] { width: 75px }
-
-[data-size="2"] { width: 125px }
-
-[data-size="3"] { width: 150px }
